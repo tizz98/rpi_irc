@@ -94,10 +94,10 @@ echo "## You will need it for the next step ##"
 echo
 sleep 10
 echo "## Getting new config file ##"
-sudo wget https://gist.githubusercontent.com/tizz98/97e02bdbdabeacc638d2/raw/4780390bcc8859fe9d42e7c5093e526c71980b28/ircd.motd -P /tmp/
+sudo wget https://raw.githubusercontent.com/tizz98/rpi_irc/master/ircd.conf -P tmp/
 sudo chmod o+rwx /etc/ircd-hybrid/
 sudo mv /tmp/ircd.conf /etc/ircd-hybrid/ircd.conf
-sudo wget https://gist.githubusercontent.com/tizz98/97e02bdbdabeacc638d2/raw/5c9a9a2a7b6bfe6a9f8bf01330c183899a6de033/ircd.motd -P /tmp/
+sudo wget https://raw.githubusercontent.com/tizz98/rpi_irc/master/ircd.motd -P /tmp/
 sudo mv /tmp/ircd.motd /etc/ircd-hybrid/ircd.motd
 echo
 echo "## Now the only manual part of this setup ##"
