@@ -94,7 +94,7 @@ echo "## You will need it for the next step ##"
 echo
 sleep 10
 echo "## Getting new config file ##"
-sudo wget https://raw.githubusercontent.com/tizz98/rpi_irc/master/ircd.conf -P tmp/
+sudo wget https://raw.githubusercontent.com/tizz98/rpi_irc/master/ircd.conf -P /tmp/
 sudo chmod o+rwx /etc/ircd-hybrid/
 sudo mv /tmp/ircd.conf /etc/ircd-hybrid/ircd.conf
 sudo wget https://raw.githubusercontent.com/tizz98/rpi_irc/master/ircd.motd -P /tmp/
